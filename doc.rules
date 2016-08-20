@@ -1,0 +1,47 @@
+{
+/*************************************************************************
+ * This contains all the rules for the game. Description of each field   *
+ * follows before it, so make sure you are aware of it before editing    *
+ * the same! This file is not backed-up by the tool. So, there's no way  *
+ * the tool can "factory-reset" this file!                               *
+ *************************************************************************/
+
+    /*
+     * Adjust the number of misses before the game ends!
+     * Valid values are in the range [0, 99]
+     */
+    "misses": 10,
+
+    /*
+     * Set the min and max length of the words to be shown from the
+     * words list. Smallest word length is 1, largest is 19
+     */
+    "min_word_length": 1,
+    "max_word_length": 19,
+
+    /*
+     * Set the min and max number of words shown at any given time. If you
+     * are a very fast typer, increase the min value to type all the time
+     * and hence get better cps. Smallest value is 1, largest is 20
+     */
+    "min_words": 1,
+    "max_words": 20,
+
+    /*
+     * Adjust the overall game speed. Min speed will be the speed at the
+     * beginning of the game, max is the max possible speed. Setting min
+     * and max speed to the same value results in a steady game fllow.
+     * Slowest possible speed is 1. Setting max speed to 0 deactivates the
+     * speed barrier
+     */
+    "min_speed": 1
+    "max_speed": 0,
+
+    /*
+     * Adjust the rate. Formula behind the speed increasement:
+     *  rate = score / step + minspeed
+     * Rate specifies the speed of the words. At each step, rate will be
+     * increased by one, the default is 100. Step cannot be smaller than 1.
+     */
+    "step": 100
+}

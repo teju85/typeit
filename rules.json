@@ -1,0 +1,10 @@
+{
+    "misses": 10,
+    "min_word_length": 1,
+    "max_word_length": 10,
+    "min_words": 2,
+    "max_words": 15,
+    "min_speed": 1,
+    "max_speed": 0,
+    "step": 100
+}
